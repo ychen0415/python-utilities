@@ -1,0 +1,13 @@
+import subprocess as sp
+import time
+
+def view_in_notepad(f_dir):
+	programName = 'notepad.exe'
+	sp.Popen([programName,f_dir])
+    
+def view_in_notepadpp(f_dir):
+    sp.call([r"C:\Program Files (x86)\Notepad++\notepad++.exe", f_dir])
+    
+    
+def get_date_mdy():
+	return time.strftime("%m%d%y", time.localtime())
